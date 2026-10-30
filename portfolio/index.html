@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f9f7" />
+  <title>Mark Jerome Reves | Aspiring Web Developer</title>
+  <meta name="description" content="Portfolio of Mark Jerome G. Reves, a 4th-year BSIT student at Pamantasan ng Cabuyao seeking an OJT position as a Web Developer." />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Defer: the script runs after the HTML has been parsed -->
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!-- Skip link for keyboard and screen-reader users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== NAVIGATION BAR ===================== -->
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Mark Jerome Reves, go to home">
+        <span class="logo-mark">
+          <img src="images/1x1 pic.JPG" alt="" width="40" height="40" />
+        </span>
+        <span class="logo-text">Mark Jerome Reves</span>
+      </a>
+
+      <!-- Hamburger button (visible on mobile only) -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Open for OJT opportunities</p>
+          <h1 id="hero-heading">Hi, I'm Mark Jerome Reves.</h1>
+          <p class="hero-subtitle">A 4th-Year BSIT Student.</p>
+          <p class="hero-intro">
+            I enjoy building functional, responsive, and user-friendly websites.
+            I'm looking for an On-the-Job Training opportunity where I can
+            apply what I've learned, grow my programming skills, and
+            contribute to real-world projects.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+
+        <figure class="hero-image">
+          <!-- Replace images/profile-placeholder.png with your own photo (same name, or edit src) -->
+          <img src="images/1x1 pic.JPG" alt="Mark Jerome Reves" width="360" height="360" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section section-alt" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 class="section-title" id="about-heading">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a Bachelor of Science in Information Technology student at
+              <strong>Pamantasan ng Cabuyao</strong>, expected to graduate in 2027.
+              I'm developing my technical skills in web development, UI/UX design,
+              and software development, and I enjoy turning ideas into
+              working, easy-to-use interfaces.
+            </p>
+            <p>
+              I'm eager to learn, I like breaking problems down step by step,
+              and I value working with a team. I'm looking for an OJT placement
+              where I can gain real-world experience, learn from experienced
+              developers, and contribute where I can.
+            </p>
+          </div>
+
+          <!-- Quick facts card -->
+          <dl class="facts-card">
+            <div><dt>Name</dt><dd>Mark Jerome G. Reves</dd></div>
+            <div><dt>Education</dt><dd>BS Information Technology</dd></div>
+            <div><dt>University</dt><dd>Pamantasan ng Cabuyao</dd></div>
+            <div><dt>Expected Graduation</dt><dd>2027</dd></div>
+            <div><dt>Goal</dt><dd>OJT as a Web Developer</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 class="section-title" id="skills-heading">Technical Skills</h2>
+        <p class="section-lead">
+          Badges marked <span class="legend legend-comfortable">Comfortable</span>
+          are skills I use regularly; <span class="legend legend-learning">Learning</span>
+          are skills I'm still building.
+        </p>
+
+        <!--
+          HOW TO EDIT SKILLS:
+          Each skill is a <li class="badge ..."> item.
+          Change "comfortable" to "learning" (or the other way round) to match your honest level.
+          Delete any skill you do not actually use.
+        -->
+        <div class="skills-grid">
+          <article class="card skill-card">
+            <h3>Frontend</h3>
+            <ul class="badge-list">
+              <li class="badge comfortable">HTML5</li>
+              <li class="badge comfortable">CSS3</li>
+              <li class="badge learning">JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card">
+            <h3>Programming</h3>
+            <ul class="badge-list">
+              <!-- EDIT: keep only languages you can genuinely use -->
+              <li class="badge learning">JavaScript</li>
+              <li class="badge learning">Java</li>
+              <li class="badge learning">PHP</li>
+              <li class="badge learning">Python</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card">
+            <h3>Tools</h3>
+            <ul class="badge-list">
+              <li class="badge comfortable">Visual Studio Code</li>
+              <li class="badge learning">Git</li>
+              <li class="badge learning">GitHub</li>
+              <li class="badge learning">Figma</li>
+            </ul>
+          </article>
+
+          <article class="card skill-card">
+            <h3>Other Skills</h3>
+            <ul class="badge-list">
+              <li class="badge comfortable">Responsive Web Design</li>
+              <li class="badge learning">UI/UX Fundamentals</li>
+              <li class="badge learning">Debugging</li>
+              <li class="badge comfortable">Team Collaboration</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section section-alt" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 class="section-title" id="projects-heading">Projects</h2>
+        <p class="section-lead">
+          A selection of my projects and contributions.
+        </p>
+
+        <!--
+          HOW TO EDIT A PROJECT CARD:
+          1. Change the title, description and tech badges.
+          2. Replace href="#" in the Source Code button with your real URL.
+             Buttons with href="#" are shown as "Coming soon" and are disabled automatically by script.js.
+        -->
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="card project-card">
+            <div class="project-body">
+              <p class="project-tag">Personal Project</p>
+              <h3>Personal Web Portfolio</h3>
+              <p>A responsive portfolio showcasing my skills, background, and projects.</p>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-outline" data-link="source">Source Code</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card">
+            <div class="project-body">
+              <p class="project-tag">Academic Capstone</p>
+              <h3>ERNI Decision-Driven Project Management Support System (DDPMSS)</h3>
+              <p>
+                A web-based project management system designed to support decision-making
+                and resource management for project teams.
+              </p>
+              <div class="project-note">
+                <strong>My contributions:</strong>
+                  <ul class="contribution-list">
+                    <li>Contributed to UI/UX design and coding of assigned components for a web-based project management system.</li>
+                    <li>Assisted in developing features related to project monitoring and resource management.</li>
+                    <li>Collaborated with teammates on a centralized platform designed to support project tracking and decision-making.</li>
+                  </ul>
+              </div>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-outline" data-link="source">Source Code</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card">
+            <div class="project-body">
+              <p class="project-tag">Web-Based Marketplace</p>
+              <h3>Harvee: Farmer&apos;s Marketplace</h3>
+              <p>
+                A web-based marketplace connecting farmers with potential buyers,
+                designed to facilitate the sale of agricultural products.
+              </p>
+              <div class="project-note">
+                <strong>My contributions:</strong>
+                <ul class="contribution-list">
+                  <li>Contributed to interface design and coding for a web-based marketplace connecting farmers with potential buyers.</li>
+                  <li>Helped develop website components focused on usability and navigation.</li>
+                  <li>Collaborated with teammates to develop the marketplace concept.</li>
+                </ul>
+              </div>
+              <ul class="tech-list" aria-label="Technologies used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-outline" data-link="source">Source Code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CERTIFICATES & EDUCATION ===================== -->
+    <section class="section" id="certificates" aria-labelledby="cert-heading">
+      <div class="container">
+        <h2 class="section-title" id="cert-heading">Education &amp; Certificates</h2>
+
+        <h3 class="subsection-title">Education</h3>
+        <article class="card education-card">
+          <h4>Bachelor of Science in Information Technology</h4>
+          <p>Pamantasan ng Cabuyao</p>
+          <p class="muted">Expected graduation: 2027</p>
+        </article>
+
+        <h3 class="subsection-title">Certificates &amp; Courses</h3>
+        <p class="section-lead">
+          Entries marked <span class="legend legend-placeholder">Placeholder</span> are not earned yet.
+          Replace them with real details and verification links once available.
+        </p>
+
+        <div class="cert-grid">
+          <article class="card cert-card">
+            <span class="status-tag">Placeholder</span>
+            <h4>[Certificate Title]</h4>
+            <dl>
+              <div><dt>Issuer</dt><dd>[Issuing organization]</dd></div>
+              <div><dt>Completed</dt><dd>[Month Year]</dd></div>
+            </dl>
+            <a href="#" class="text-link" data-link="verify">Verify certificate</a>
+          </article>
+
+          <article class="card cert-card">
+            <span class="status-tag">Placeholder</span>
+            <h4>[Web Development Course Title]</h4>
+            <dl>
+              <div><dt>Issuer</dt><dd>[Issuing organization]</dd></div>
+              <div><dt>Completed</dt><dd>[Month Year]</dd></div>
+            </dl>
+            <a href="#" class="text-link" data-link="verify">Verify certificate</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-wrap">
+        <h2 class="section-title" id="contact-heading">Contact</h2>
+        <p class="section-lead">
+          I'm looking for an OJT opportunity as a Web Developer. Feel free to reach out.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:markjeromereves0@gmail.com">markjeromereves0@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <!-- Replace href="#" with your real GitHub profile URL -->
+            <a href="https://github.com/jeromesever" data-link="social" target="_blank" rel="noopener noreferrer">https://github.com/jeromesever</a>
+          </li>
+          <li>
+            <span class="contact-label">LinkedIn</span>
+            <!-- Replace href="#" with your real LinkedIn profile URL -->
+            <a href="https://www.linkedin.com/in/mark-jerome-reves-562189444/" data-link="social" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/mark-jerome-reves-562189444/</a>
+          </li>
+        </ul>
+
+        <a class="btn btn-primary" href="mailto:markjeromereves0@gmail.com?subject=OJT%20Inquiry%20for%20Web%20Developer">Email Me</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Mark Jerome G. Reves. All rights reserved.</p>
+      <p>Designed and developed by Mark Jerome Reves.</p>
+    </div>
+  </footer>
+</body>
+</html>
